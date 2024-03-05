@@ -1,0 +1,531 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+/* this makes the color of thr navbar white and designs the way it looks*/
+#article{
+  background-color: white;
+  border-radius: 10px;
+  top:0px;
+  height: 70px;
+  width: 100%;
+  position:absoulte;
+}
+
+/*this makes sure that brands floats to the left and isnt underlined*/
+.navbar a {
+  float: left;
+  font-size: 16px;
+  padding: 14px 16px;
+  color: black;
+  text-decoration:none;
+}
+/*this makes sure that the impact menu floats left*/
+.impact {
+  float:left;
+}
+/*this gives the impact button the background color white and get rid of its border outline*/
+.impact .dropbtn {
+  border:none;
+  color: black;
+  padding: 14px 16px;
+  background-color: white;
+}
+
+/*this makes it white when i hover over the impact button*/
+.navbar a:hover, .impact:hover .dropbtn {
+  background-color: white;
+
+}
+/* this prioritizes the impact content so it goes over the picture and so nothing displays when you hover off*/
+.impact-content {
+  position: absolute;
+  z-index:1;
+  background-color: white;
+  display: none;
+}
+/*this makes the dropdown menu for impact :horizontal*/
+.impact-content a {
+  color: black;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  float:none;
+}
+/*this simply makes thhe impact menu white when hovering over so you see a diffrence and makes the text go bold as you hover over*/
+.impact-content a:hover {
+  background-color: white;
+  font-weight: bold;
+}
+/* this makes sure when you hover over impact the menu will show up*/
+.impact:hover .impact-content {
+  display: block;
+}
+
+/* this makes impact float left  */
+.dropdown {
+  float: left;
+}
+/* this gets rid of the outline for the discover button  */
+.dropdown .dropbtn1 {
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  border: none;
+  margin:0%;
+  padding: 14px 16px;
+
+}
+/* this makes it so when you hover over discover its white so you cant see the diffrence  */
+.dropdown a:hover, .dropdown:hover .dropbtn1 {
+  background-color: white;
+
+}
+/* this gives priroity to dropdown menu over picture and makes it so nothing shows up when your hovering over it  */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 100px;
+  background-color: white;
+  z-index: 1;
+}
+
+/* this makes the dropdown menu horizontal whith each option after the other*/
+.dropdown-content a {
+ 
+  color: black;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  float: none;
+}
+/* this makes sure that the text goes bold when you hover over it */
+.dropdown-content a:hover {
+  background-color: white;
+  font-weight: bold;
+}
+/* this makes sure that when you hover over the dropdown menu show up */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* this floats the logo image to the left  */
+.navbar img{
+  float: left;
+
+}
+/*this is the dimensions for the logo*/
+.go{
+  height: 30px;
+  width: 140px;
+}
+
+
+#Discover{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style:oblique;
+
+}
+
+#brands{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style:oblique;
+}
+
+#Impact{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style:oblique;
+}
+
+
+.article1{ 
+  background-color: transparent;
+}
+
+
+/*this is the dimensions for the pictures*/
+.slideshow {
+  width: 1350px;
+  height: 550px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+  margin: auto;
+  top: 100px;
+  overflow: hidden;
+}
+
+/*this speeds up the transitions*/
+.slide {
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  opacity:0;
+}
+/*this keeps the imiages the right size*/
+.slide img {
+  width: 1350px;
+  height: 550px;
+}
+
+
+/* this means make the imiages fade in and out  */
+
+@keyframes slideshow {
+  0%, 20% { opacity: 1; }
+  25%, 45% { opacity: 0; }
+  50%, 70% { opacity: 0; }
+  75%, 95% { opacity: 0; }
+}
+
+/* slide 1 fades in immediatly after 5 seconds slide 2 fades in then 3 more seconds later slide 3 fades in. And then it repeats on a continues loop*/
+.slide:nth-child(1) {
+  animation: slideshow 7s infinite;
+}
+.slide:nth-child(2) {
+  animation: slideshow 7s infinite;
+  animation-delay: 5s; 
+}
+.slide:nth-child(3) {
+  animation: slideshow 7s infinite;
+  animation-delay: 3s; 
+}
+
+#Popular{
+  background-color: transparent;
+  text-align: center;
+  font-size: 35px;
+  font-family: sans-serif;
+  position: absolute;
+  top: 710px;
+  left: 700px;
+}
+
+
+/*sprite image*/
+#img4{
+  position:absolute;
+  top: 850px;
+  right:150px;
+  border-radius: 20px; }
+
+/* phones image */
+#img3{
+  position:absolute;
+  top: 850px;
+  left:150px;
+  border-radius: 20px;
+}
+
+/* text below phone image */
+#art3img{
+  position:absolute;
+  top: 1160px;
+  left:155px;
+  width: 550px;
+  height: 250px;
+  font-family: sans-serif;
+  background-color: white;
+  border-radius: 20px;
+  font-size:24px;
+}
+
+#art3imgl{
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+/* text below sprite image */
+#art4img{
+  position:absolute;
+  font-family: sans-serif;
+  border: 2px solid white;
+  border-color: white;
+  height: 225px;
+  width: 550px;
+  top:1180px;
+  right:150px;
+  background-color: white;
+  border-radius: 20px;
+  font-size:24px;
+}
+
+#art4imgl{
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+
+#GlobalImpact{
+  position: absolute;
+  top: 1500px;
+  left: 650px;
+  font-size: 35px;
+  font-family: sans-serif;
+}
+
+/* recyling image*/
+#img6{
+  position:absolute;
+  top: 1790px;
+  left:200px;
+  border-radius: 20px;
+
+  
+}
+
+/* this is the textbox next to the recycleing image*/
+#art7img{
+  position: absolute;
+  top: 1600px;
+  right: 260px;
+  font-size: 35px;
+  font-family: sans-serif;
+  font-style: oblique;
+  border: 25px solid white;
+  height: 500px;
+  width: 550px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+#art7img1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 24px;
+  font-style: oblique;
+  font-weight: lighter;
+}
+
+#explore{
+  position: absolute;
+  top: 2500px;
+  left: 580px;
+  font-size: 35px;
+  font-family: sans-serif;
+}
+
+/* red coca cola logo */
+#img8{
+  position: absolute;
+  top: 2700px;
+  left: 300px;
+  border-radius: 20px;
+  height: 150px;
+  width: 180px;
+  border:50px solid white;
+  background-color: white;
+}
+
+/*coca cola zero sugar logo*/
+#img9{
+  position: absolute;
+  top: 2700px;
+  left: 600px;
+  border-radius: 20px;
+  height: 150px;
+  width: 180px;
+  border:50px solid white;
+  background-color: white;
+}
+
+/*diet coke*/
+#img10{
+  position: absolute;
+  top: 2700px;
+  left: 900px;
+  border-radius: 20px;
+  height: 150px;
+  width: 180px;
+  border:50px solid white;
+  background-color: white;
+}
+
+/* fanta image */
+#img11{
+  position: absolute;
+  top: 2970px;
+  left: 300px;
+  border-radius: 20px;
+  height: 150px;
+  width: 180px;
+  border:50px solid white;
+  background-color: white;
+}
+
+/* sprite image */
+#img12{
+  position: absolute;
+  top: 2970px;
+  left: 600px;
+  border-radius: 20px;
+  height: 150px;
+  width: 180px;
+  border:50px solid white;
+  background-color: white;
+}
+
+/* dr pepper image */
+#img13{
+  position: absolute;
+  top: 2970px;
+  left: 900px;
+  border-radius: 20px;
+  height: 150px;
+  width: 180px;
+  border:50px solid white;
+  background-color: white;
+}
+
+#viewall{
+  position: absolute;
+  top: 3300px;
+  left: 530px;
+  font-size: 35px;
+  font-family: sans-serif;
+  color: black;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+#FindOutMore{
+  position: absolute;
+  top: 2100px;
+  right: 430px;
+  font-size: 25px;
+  font-family: sans-serif;
+  color: black;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+
+/*black outline for the footer*/
+#footer{
+  position: absolute;
+  top: 3500px;
+  background-color: black;
+  width:100%;
+  height: 600px;
+}
+/* coca cola logo */
+#img14{
+  position: absolute;
+  top: 3580px;
+  left: 250px;
+  border-radius: 20px;
+  height: 50px;
+  width: 220px;
+}
+/*horizontal line*/
+  #footer3{
+    position: absolute;
+    top:3650px;
+    left:250px;
+    width: 1100px;
+    
+  }
+/*great britian button*/
+#footer4b{
+  position: absolute;
+  top: 3570px;
+  left: 1200px;
+  border-radius: 10px;
+  background-color: black;
+  border:2px solid white;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+
+section a{
+  text-decoration: none;
+  color: white}
+/*footer links*/
+#footer4l{
+  position: absolute;
+  top: 3680px;
+  left: 225px;
+  color: black;
+}
+/*link decoration*/
+#color1{
+  color:white;
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*more links*/
+#footer5l{
+  position: absolute;
+  top: 3680px;
+  left: 400px;
+  color: black;
+}
+/*link decoration*/
+#color2{
+  color:white;
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*link decoration*/
+#color3{
+  color:grey;
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*more links*/
+#footer6c{
+  position: absolute;
+  top: 3735px;
+  left: 575px;
+  color: black;
+}
+/*link decoration*/
+#color4{
+  color:white;
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+  background-color: whitesmoke;
+}
+
+/*:horizontal line*/
+
+#footer7hr{
+    position: absolute;
+    top:3950px;
+    left:250px;
+    width: 1100px;
+  
+}
+
+
+/* paragraph right at the end*/
+#footer8{
+  position: absolute;
+  top: 4000px;
+  color:white;
+  left:1050px;
+  font-size: 14px;
+}
+form{
+  position: absolute;
+  top: 3735px;
+  left: 1250px;
+  color: white;
+}
